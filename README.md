@@ -66,5 +66,7 @@ For the average revenue generated from the sale of 'Paseo'; the command `AVERAGE
 To get the number of sales made in the Government and Midmarket segment, this formula was used: `=SUM(COUNTIFS(A2:A701,{"GOVERNMENT","MIDMARKET"}))`. This prompted Excel to add the count unit sold for **Government Segment** and **MidMarket Segment** and add them together. i.e Count the sale for Government and Midmarket and add them together.
 To get the total revenue generated from the sales of 'Montana' in Canada; this was the formula used: `=SUMIFS(J2:J701,B2:B701,"CANADA",C2:C701,"MONTANA")`. This means we prompted Excel to check through the product column, filter 'Montana' product out, then match the output with the corresponding values in the **sales column** in Canada and sum the sale together.  
 For the country, Segment and Month were the highest unit of good was sold; this formula was used: `=MAX(E2:E701)`. `=VLOOKUP(Q9,E2:M701,9,FALSE)` for Segment, `=VLOOKUP(Q9,E2:N701,10,FALSE)` for the country and `=VLOOKUP(Q9,E2:L701,8,FALSE)` for the month. This filtered out the highest unit sold which was the Government Segment,In United States of America in April.
-To get the total profit made in December, this formula was used:`=SUMIFS(K2:K701, L2:L701, "DECEMBER")`. This prompted excel to sum up the corresponding total sales in december using the profit and the months column.
+To get the total profit made in December, this formula was used:`=SUMIFS(K2:K701, L2:L701, "DECEMBER")`. This prompted Excel to sum up the corresponding total sales in December using the profit and the month's column.
+![SOLUTION TO TASK 3](https://github.com/ARBICE11/TASK_123/assets/140498286/e25ce603-312c-45b4-8808-d2dd3a46c3b4)
+
  
