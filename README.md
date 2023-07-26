@@ -47,22 +47,24 @@ Using the same Sales Data, determine the following:
 - The average revenue generated from each sale of 'Paseo'
 - The number of sales made in the Government and Midmarket segment
 - The total revenue generated from the sales of 'Montana' in Canada
+- In which country, Segment and Month was the highest unit of good sold?
 - What is the total profit made in December?
 - ![SALES DATA SET](https://github.com/ARBICE11/TASK_123/assets/140498286/52f7b800-78fe-42d9-ad2e-3615cf4b8133)
 
  #### MY INITIATIVE
- ----
- For the total revenue generated in $; I used this formula: `=SUM(J2:J701` and this command asked Excel to sum up all the sales made on all the items  in the sales column.
- For the profit generated in $; I used this formula: `=SUM(K2:K701)` and this invariably asked Excel to add together the profit made in the profit column.
- For the average revenue, I used this formula: `=AVERAGE(J2:J701)` and this command asked Excel to find the Average revenue realised in the sales column.
- For getting the average units sold for every order, this formula was used: `=AVERAGE(E2:E701)`. This prompted Excel to find the average unit sold for every order in the **_unit sold_** column.
- For the total discount given in $; I used this formula: `=SUM(I2:I701)`, this command added together all discounts given on all items in the **_Discount_** column.
- To get the number of sales recorded; this formula was used: `=COUNT(H2:H701)`, This asked Excel to count all the sales in the sales column.
- For the highest profit generated; this formula was used `=MAX(K2:K701)`; this prompted Excel to check through the profit column and bring out the highest number in the profit column.
- I created Sales Range column and used this formula :'=IF (H2>=Average Revenue, "High Sales", "Low Sales")`. The average 
- ![SOLUTION TO TASK 2](https://github.com/ARBICE11/TASK_123/assets/140498286/c0d76e39-f091-41d3-89e2-0f99338129c5)
-For the average revenue generated from the sale of 'Paseo'; the command `AVERAGEIF` function and the formula i used is:`=AVERAGEIF(C2:C701,"PASEO", J2:J701)`. this invariably means we prompted Excel to check through the product column, filter 'Paseo' product out, then match the output with the corresponding values in the **sales column** before finding the **Average**.
+----
+For the total revenue generated in $; I used this formula: `=SUM(J2:J701` and this command asked Excel to sum up all the sales made on all the items  in the sales column.
+For the profit generated in $; I used this formula: `=SUM(K2:K701)` and this invariably asked Excel to add together the profit made in the profit column.
+For the average revenue, I used this formula: `=AVERAGE(J2:J701)` and this command asked Excel to find the Average revenue realised in the sales column.
+For getting the average units sold for every order, this formula was used: `=AVERAGE(E2:E701)`. This prompted Excel to find the average unit sold for every order in the **_unit sold_** column.
+For the total discount given in $; I used this formula: `=SUM(I2:I701)`, this command added together all discounts given on all items in the **_Discount_** column.
+To get the number of sales recorded; this formula was used: `=COUNT(H2:H701)`, This asked Excel to count all the sales in the sales column.
+For the highest profit generated; this formula was used `=MAX(K2:K701)`; this prompted Excel to check through the profit column and bring out the highest number in the profit column.
+I created Sales Range column and used this formula :'=IF (H2>=Average Revenue, "High Sales", "Low Sales"). The average 
+![SOLUTION TO TASK 2](https://github.com/ARBICE11/TASK_123/assets/140498286/c0d76e39-f091-41d3-89e2-0f99338129c5)
+For the average revenue generated from the sale of 'Paseo'; the command `AVERAGEIF` function and the formula i used is:`=AVERAGEIF(C2:C701,"PASEO", J2:J701)`. This invariably means we prompted Excel to check through the product column, filter 'Paseo' product out, then match the output with the corresponding values in the **sales column** before finding the **Average**.
 To get the number of sales made in the Government and Midmarket segment, this formula was used: `=SUM(COUNTIFS(A2:A701,{"GOVERNMENT","MIDMARKET"}))`. This prompted Excel to add the count unit sold for **Government Segment** and **MidMarket Segment** and add them together. i.e Count the sale for Government and Midmarket and add them together.
 To get the total revenue generated from the sales of 'Montana' in Canada; this was the formula used: `=SUMIFS(J2:J701,B2:B701,"CANADA",C2:C701,"MONTANA")`. This means we prompted Excel to check through the product column, filter 'Montana' product out, then match the output with the corresponding values in the **sales column** in Canada and sum the sale together.  
- 
+For the country, Segment and Month were the highest unit of good was sold; this formula was used: `=MAX(E2:E701)`. `=VLOOKUP(Q9,E2:M701,9,FALSE)` for Segment, `=VLOOKUP(Q9,E2:N701,10,FALSE)` for the country and `=VLOOKUP(Q9,E2:L701,8,FALSE)` for the month. This filtered out the highest unit sold which was the Government Segment,In United States of America in April.
+To get the total profit made in December, this formula was used:`=SUMIFS(K2:K701, L2:L701, "DECEMBER")`. This prompted excel to sum up the corresponding total sales in december using the profit and the months column.
  
