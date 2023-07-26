@@ -48,6 +48,8 @@ Using the same Sales Data, determine the following:
 - The number of sales made in the Government and Midmarket segment
 - The total revenue generated from the sales of 'Montana' in Canada
 - What is the total profit made in December?
+- ![SALES DATA SET](https://github.com/ARBICE11/TASK_123/assets/140498286/52f7b800-78fe-42d9-ad2e-3615cf4b8133)
+
  #### MY INITIATIVE
  ----
- 
+ For the total revenue generated in $; I used this fomular: =SUM(J2:J701
